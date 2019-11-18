@@ -1,0 +1,146 @@
+body {
+  
+    font-size: 1em;
+}
+
+
+/* Elements hidden */
+
+#carte iframe, .linkTop {
+
+    display:none;
+}
+
+/* HEADER */
+
+header {
+   
+    height: auto;
+    justify-content: center;
+ 
+
+}
+
+header nav {
+
+    height: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.menu nav {
+    width: 80%;
+
+}
+
+
+header nav li a, .menu nav li a {
+    text-align: center;
+    font-size: 0.85em;
+    color: white;
+}
+
+
+#join form {
+    width: 80%;
+}
+
+footer {
+    padding-top: 2%;
+}
+
+
+
+.banner {
+    width: 100%;
+    padding-top: 5%;
+}
+
+
+/* CONTACT */
+
+
+
+#carte {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+#contact form, #join form {
+    display:block;
+    position: relative;
+    width: 85%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    background-color: rgba(105, 105, 105, 0.1);
+ 
+
+
+}
+
+input[type=submit] {
+    background-color: black;
+    border-bottom: none;
+    font-size: 0.8em;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+}
+
+#address {
+    font-size: 0.8em;
+    color: black;
+}
+
+
+/* About : TEAM  */
+
+.team div {
+    margin: auto;
+
+}
+div.team div.col {
+    width: 70%;
+    margin-top: 2%;
+    font-size: 1em;
+    margin-bottom: 1%;
+  
+}
+.team img {
+    height: 5em;
+    width: 5em;
+   display: inline-block;
+   margin-top:1%;
+   padding-top: 2%;
+  
+
+}
+div.team p {
+    width: 90%;
+
+}
+
+div.polaroid {
+    width: 70%;
+    border-radius: 2em;
+    padding: 1%;
+    margin-bottom: 0;
+   
+   
+}
+.team div.container {
+display: inline-block;
+width: auto;
+padding: 5%;
+margin: 0;
+text-align: center;
+height: auto;
+border: solid white 1px;
+border-radius: 2em;
+
+}
+

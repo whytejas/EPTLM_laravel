@@ -1,0 +1,562 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    width: auto;
+    padding:0;
+    margin: 0;
+}
+
+/* Links for in-page menu */
+
+#anchor1 {
+
+    display: block;
+    height: 80px;
+    width: 100%;
+
+}
+
+h1 {
+    color: #EC5F5D;
+    text-align: center;
+    text-shadow: 2px 4px 3px black;
+    margin-bottom: 5%;
+    margin-top: 7%;
+    padding-top: 5%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: #434A70;
+    padding: 1%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h3 {
+    color: #434A70;
+    text-align: center;
+}
+
+
+
+/* HEADER */
+
+header {
+
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #EC5F5D;
+    z-index: 1;
+
+}
+
+
+/* header img {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 100px;
+
+} */
+
+
+header nav,
+.menu nav {
+
+    text-align: center;
+    font-size: 1em;
+
+
+}
+
+.menu nav {
+    position: relative;
+    top: 5px;
+    background-color: #434A70;
+    padding: 1px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+
+
+
+}
+
+
+header nav ul,
+.menu nav ul {
+
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    padding-top: 2%;
+}
+
+
+
+header nav ul li,
+.menu nav ul li {
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+.menu nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+
+header nav li a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+header nav li a:hover {
+
+    color: #434A70;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+
+}
+
+
+/* FOOTER */
+
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    padding-left:0;
+    background-color: #DCDCDC;
+    color:#434A70;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding-bottom: 15px;
+    width: auto;
+}
+
+#footer a {
+
+    text-decoration: none;
+    color: #EC5F5D;
+}
+
+.fa {
+    display:inline-block;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 1%;
+
+
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Set a specific color for each brand */
+
+  /* Facebook */
+  .fa-facebook {
+    background-color: #3B5998;
+    color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+
+   /* Insta */
+   .fa-instagram {
+    background-color:purple;
+    color: white;
+  }
+
+
+/* INTRO */
+
+
+.banner {
+    width: 100%;
+
+}
+
+.intro {
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.intro p {
+    text-align:center;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #434A70;
+
+}
+
+a.linkTop, div.polaroid a {
+    color: #EC5F5D;
+
+    text-decoration: none;
+
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+}
+
+a.linkTop {
+    position: absolute;
+    right: 0;
+}
+
+a:hover.linkTop, div.polaroid a:hover {
+    color: #434A70;
+    font-size: 1.1em;
+}
+
+.intro a:hover {
+    text-decoration: none;
+    color: #EC5F5D;
+    font-size: 1.1em;
+
+}
+
+
+.content p {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+
+.content div {
+    margin-bottom: 5%;
+}
+
+
+img.logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 8.5%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.team {
+
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+div.team div.col {
+    margin-left:auto;
+    margin-right: auto;
+
+    display:block;
+    height: auto;
+    width:30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: #434A70;
+    color: white;
+
+}
+
+div.polaroid {
+    margin:auto;
+    margin-top: 10%;
+    margin-bottom: 0;
+    display:block;
+    width: 80%;
+
+    background-color:#EC5F5D;
+    box-shadow: 0 4px 8px 0 rgba(240, 229, 229, 0.2), 0 6px 20px 0 rgba(236, 233, 233, 0.19);
+  }
+
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+
+  }
+
+.team img {
+
+    margin-left:auto;
+    margin-right:auto;
+
+    width: 250px;
+    height: 250px;
+
+
+
+}
+
+
+
+
+
+
+.whatWeDo ul,
+.partnerships ul,
+.support ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+.whatWeDo ul li::before,
+.partnerships ul li::before ,
+.support ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #EC5F5D;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1.5em;
+    /* Also needed for space (tweak if needed) */
+
+}
+
+
+.whatWeDo ul li a,
+.partnerships ul li a,
+.support ul li a {
+    text-decoration: none;
+    color: #434A70;
+}
+
+
+
+
+
+
+/* CONTACT */
+
+
+#carte {
+
+    position: relative;
+    margin-bottom: 50px;
+    height: 850px;
+
+}
+
+#carte iframe {
+
+    width: 100%;
+    height: 800px;
+    opacity: 1;
+    border: none;
+
+
+}
+
+
+#contact form {
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    margin: 50px;
+    margin-right: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #EC5F5D;
+    border-radius: 5px;
+
+
+}
+
+#join form {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #EC5F5D;
+    border-radius: 5px;
+    width: 50%;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+
+#contact h2, #join h2 {
+    margin-top: 3%;
+    color: white;
+
+}
+
+#address {
+
+    font-size: 15px;
+
+}
+
+input {
+
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    border: solid 1px #DCDCDC;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+
+textarea {
+
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    border: solid 1px #DCDCDC;
+    border-radius: 5px;
+    resize: vertical;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+input[type=submit] {
+
+    width: auto;
+    background-color: #EC5F5D;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: solid #434A70 4px;
+}
+
+
+
+
+/* NEWSLETTER */
+
+#newsletter_form
+{
+
+ width:100%;
+ height:100%;
+ background-color: #EC5F5D;
+ text-align:center;
+ padding-top: 50px;
+}
+#newsletter_form h1
+{
+ font-size:45px;
+ color:white;
+}
+#newsletter_form #user_name
+{
+ margin-top:20px;
+ width:20%;
+ height:50px;
+ padding-left:20px;
+ border:none;
+ font-size:17px;
+}
+#newsletter_form #email
+{
+ margin-top:20px;
+ width:50%;
+ height:50px;
+ padding-left:20px;
+ border:none;
+ font-size:17px;
+}
+#newsletter_form input[type="submit"]
+{
+ margin-top:10px;
+ width:35%;
+ height:50px;
+ border:none;
+ background-color:#084B8A;
+ color:white;
+ font-size:22px;
+ cursor:pointer;
+}
+#newsletter_form input[type="button"]
+{
+ margin-top:10px;
+ width:35%;
+ height:50px;
+ border:none;
+ background-color:#FE2E2E;
+ color:white;
+ font-size:22px;
+ cursor:pointer;
+}
+
+
+
+
+/* BOOTSTRAP */
+
+.btn-light {
+    background-color:#EC5F5D;
+    color: white;
+    border: none;
+}
+
+
+.carousel-item {
+
+    width: auto;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
