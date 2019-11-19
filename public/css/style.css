@@ -399,6 +399,7 @@ div.polaroid {
     top: 0;
     right: 0;
     width: 30%;
+    height: 85%;
     margin: 50px;
     margin-right: 90px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -455,7 +456,7 @@ input {
 
 textarea {
 
-    height: auto;
+    height: 5em;
     width: 100%;
     margin-top: 20px;
     border: solid 1px #DCDCDC;
@@ -467,13 +468,18 @@ textarea {
 
 }
 
+textarea.form-control {
+    height: 5em;
+}
+
 input[type=submit] {
 
     width: auto;
     background-color: #EC5F5D;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     text-align: center;
     margin-bottom: 5px;
     border-bottom: solid #434A70 4px;

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,7 +55,11 @@ Route::get('/volunteer', function () {
 
 
 
-Route::post('/form', 'Controller@formSubmit');
+Route::post('/formInput', 'Controller@formSubmit');
+
+
+
+
 
 
 
