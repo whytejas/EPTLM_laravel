@@ -18,23 +18,51 @@ class Controller extends BaseController
     /**
      * @param Request $request
      * @return string
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function formSubmit(Request $request)
     {
 
+        if(isset($_POST['g-recaptcha-response'])) {
+            // RECAPTCHA SETTINGS
+            $captcha = $_POST['g-recaptcha-response'];
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $key = '6LfCFMYUAAAAANWUfctD3cDQcfTzckFu5iLiVpVd';
+            $url = 'https://www.google.com/recaptcha/api/siteverify';
 
-        $name = $request->Name;
-        $email = $request->Email;
-        $message = $request->Message;
+            // RECAPTCH RESPONSE
+            $recaptcha_response = file_get_contents($url.'?secret='.$key.'&response='.$captcha.'&remoteip='.$ip);
+            $data = json_decode($recaptcha_response);
+
+            if(isset($data->success) &&  $data->success === true) {
+
+                $this->validate($request, [
+                    'website' => 'sometimes|max:0',
+                ]);
+
+                $name = $request->Name;
+                $email = $request->Email;
+                $subject = $request->Subject;
+                $message = $request->Message;
 
 
-        Mail::to($email)->send(new MailtrapExample($name));
+                Mail::to($email)->send(new MailtrapExample($name));
 
-        Mail::to('katie@eptlm.com')
-            ->cc(['kathryn@eptlm.com', 'lindsay@eptlm.com', 'david@eptlm.com'])
-            ->send(new MailtoAdmin($name, $email, $message));
+                Mail::to('katie@eptlm.com')
+                    ->cc(['kathryn@eptlm.com', 'lindsay@eptlm.com', 'tejas@eptlm.com', 'david@eptlm.com'])
+                    ->send(new MailtoAdmin($name, $email, $subject, $message));
 
-        return "Hey ".$name."! Thank you for contacting English Pour Tout Le Monde. Please check your inbox. Click <a href='/'>here</a> to return to our home page.";
+                return "Hey ".$name."! Thank you for contacting English Pour Tout Le Monde. Please check your inbox. Click <a href='/'>here</a> to return to our home page.";
+            }
+            else {
+                die('Your message has not been sent. You cannot continue without verifying that you are a human! Please hit back to return to the contact page');
+            }
+        }
+
+
+else {
+    return view('main.contact');
+}
 
 
 

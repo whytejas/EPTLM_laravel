@@ -28,4 +28,6 @@
          <a href="{{url('/privacy')}}">Privacy Policy</a></span>
 
     </div>
+    <br>
+    <button type="button" class="btn btn-dark"><a href="{{url('/logout')}}">Logout</a></button>
 </footer>

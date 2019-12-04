@@ -13,18 +13,21 @@ class MailtoAdmin extends Mailable
     private $usermessage;
     private $username;
     private $usermail;
+    private $usersubject;
 
     /**
      * Create a new message instance.
      *
      * @param $name
      * @param $email
+     * @param $subject
      * @param $message
      */
-    public function __construct($name, $email, $message)
+    public function __construct($name, $email, $subject, $message)
     {
         $this->username = $name;
         $this->usermail = $email;
+        $this->usersubject = $subject;
         $this->usermessage = $message;
     }
 
@@ -41,6 +44,7 @@ class MailtoAdmin extends Mailable
             ->with([
                 'name' => $this->username,
                 'message' => $this->usermessage,
+                'subject' => $this->usersubject,
                 'email' => $this->usermail,
             ]);
     }

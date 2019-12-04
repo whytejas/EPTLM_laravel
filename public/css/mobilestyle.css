@@ -1,5 +1,5 @@
 body {
-  
+
     font-size: 1em;
 }
 
@@ -14,10 +14,10 @@ body {
 /* HEADER */
 
 header {
-   
+
     height: auto;
     justify-content: center;
- 
+
 
 }
 
@@ -40,8 +40,12 @@ header nav li a, .menu nav li a {
     color: white;
 }
 
+#menubtn1  .dropdown-menu.show, #menubtn1 .btn-secondary, #menubtn2  .dropdown-menu.show, #menubtn2 .btn-secondary  {
+    font-size: 0.85em;
+}
 
-#join form {
+
+#join form, .articles form {
     width: 80%;
 }
 
@@ -65,19 +69,20 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
- 
+
 }
 
 #contact form, #join form {
     display:block;
+    color:black;
     position: relative;
-    width: 85%;
+    width: 95%;
     height:auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;
     background-color: rgba(105, 105, 105, 0.1);
- 
+
 
 
 }
@@ -108,7 +113,7 @@ div.team div.col {
     margin-top: 2%;
     font-size: 1em;
     margin-bottom: 1%;
-  
+
 }
 .team img {
     height: 5em;
@@ -116,7 +121,7 @@ div.team div.col {
    display: inline-block;
    margin-top:1%;
    padding-top: 2%;
-  
+
 
 }
 div.team p {
@@ -129,9 +134,10 @@ div.polaroid {
     border-radius: 2em;
     padding: 1%;
     margin-bottom: 0;
-   
-   
+
+
 }
+
 .team div.container {
 display: inline-block;
 width: auto;
@@ -143,4 +149,5 @@ border: solid white 1px;
 border-radius: 2em;
 
 }
+
 

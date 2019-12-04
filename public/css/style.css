@@ -21,8 +21,6 @@ h1 {
     text-align: center;
     text-shadow: 2px 4px 3px black;
     margin-bottom: 5%;
-    margin-top: 7%;
-    padding-top: 5%;
 }
 
 h2 {
@@ -173,32 +171,38 @@ footer {
     margin: 1%;
 
 
-  }
+}
 
-  /* Add a hover effect if you want */
-  .fa:hover {
+/* Add a hover effect if you want */
+.fa:hover {
     opacity: 0.7;
-  }
+}
 
-  /* Set a specific color for each brand */
+/* Set a specific color for each brand */
 
-  /* Facebook */
-  .fa-facebook {
+/* Facebook */
+.fa-facebook {
     background-color: #3B5998;
     color: white;
-  }
+}
 
-  /* Twitter */
-  .fa-twitter {
+/* Twitter */
+.fa-twitter {
     background-color: #55ACEE;
     color: white;
-  }
+}
 
-   /* Insta */
-   .fa-instagram {
+/* Insta */
+.fa-instagram {
     background-color:purple;
     color: white;
-  }
+}
+
+footer button a {
+    color:white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
 
 
 /* INTRO */
@@ -308,15 +312,15 @@ div.polaroid {
 
     background-color:#EC5F5D;
     box-shadow: 0 4px 8px 0 rgba(240, 229, 229, 0.2), 0 6px 20px 0 rgba(236, 233, 233, 0.19);
-  }
+}
 
-  div.container {
+div.container {
     text-align: center;
     padding: 10px 20px;
     background-color: white;
     color: black;
 
-  }
+}
 
 .team img {
 
@@ -337,14 +341,14 @@ div.polaroid {
 
 .whatWeDo ul,
 .partnerships ul,
-.support ul {
+.support ul, .orientation ul, .volunteerRoles ul, .whyVolunteer ul {
     list-style: none;
     /* Remove default bullets */
 }
 
 .whatWeDo ul li::before,
 .partnerships ul li::before ,
-.support ul li::before {
+.support ul li::before, .orientation ul li::before, .volunteerRoles ul li::before, .whyVolunteer ul li::before {
     content: "\2022";
     /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #EC5F5D;
@@ -360,13 +364,41 @@ div.polaroid {
 
 .whatWeDo ul li a,
 .partnerships ul li a,
-.support ul li a {
+.support ul li a, .orientation ul li, .volunteerRoles ul li,  .whyVolunteer ul li {
     text-decoration: none;
     color: #434A70;
 }
 
 
+.volunteerwithus li, .volunteerRoles li, .whyVolunteer li {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+
+
+.editing button {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none ;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.editing button a {
+    text-decoration: none ;
+    color: white;
+}
+
+.deletebutton {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 25%;
+}
 
 
 
@@ -394,15 +426,16 @@ div.polaroid {
 
 #contact form {
 
-    display: inline-block;
-    position: absolute;
+    display: block;
+    color: white;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 50%;
     height: 85%;
-    margin: 50px;
-    margin-right: 90px;
-    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 5%;
+    background-color: #434A70;
     text-align: left;
     padding-left: 25px;
     padding-right: 25px;
@@ -412,7 +445,7 @@ div.polaroid {
 
 }
 
-#join form {
+#join form, .articles form {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     padding-left: 25px;
@@ -423,6 +456,12 @@ div.polaroid {
     margin-right:auto;
     margin-left:auto;
 
+}
+
+.article {
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -469,7 +508,7 @@ textarea {
 }
 
 textarea.form-control {
-    height: 5em;
+    height:3em;
 }
 
 input[type=submit] {
@@ -482,67 +521,69 @@ input[type=submit] {
     padding-bottom: 15px;
     text-align: center;
     margin-bottom: 5px;
-    border-bottom: solid #434A70 4px;
+    border-bottom: solid white 4px;
 }
 
 
-
+select{
+    font-size: 0.8em;
+}
 
 /* NEWSLETTER */
 
 #newsletter_form
 {
 
- width:100%;
- height:100%;
- background-color: #EC5F5D;
- text-align:center;
- padding-top: 50px;
+    width:100%;
+    height:100%;
+    background-color: #EC5F5D;
+    text-align:center;
+    padding-top: 50px;
 }
 #newsletter_form h1
 {
- font-size:45px;
- color:white;
+    font-size:45px;
+    color:white;
 }
 #newsletter_form #user_name
 {
- margin-top:20px;
- width:20%;
- height:50px;
- padding-left:20px;
- border:none;
- font-size:17px;
+    margin-top:20px;
+    width:20%;
+    height:50px;
+    padding-left:20px;
+    border:none;
+    font-size:17px;
 }
 #newsletter_form #email
 {
- margin-top:20px;
- width:50%;
- height:50px;
- padding-left:20px;
- border:none;
- font-size:17px;
+    margin-top:20px;
+    width:50%;
+    height:50px;
+    padding-left:20px;
+    border:none;
+    font-size:17px;
 }
 #newsletter_form input[type="submit"]
 {
- margin-top:10px;
- width:35%;
- height:50px;
- border:none;
- background-color:#084B8A;
- color:white;
- font-size:22px;
- cursor:pointer;
+    margin-top:10px;
+    width:35%;
+    height:50px;
+    border:none;
+    background-color:#084B8A;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
 }
 #newsletter_form input[type="button"]
 {
- margin-top:10px;
- width:35%;
- height:50px;
- border:none;
- background-color:#FE2E2E;
- color:white;
- font-size:22px;
- cursor:pointer;
+    margin-top:10px;
+    width:35%;
+    height:50px;
+    border:none;
+    background-color:#FE2E2E;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
 }
 
 
@@ -566,3 +607,93 @@ input[type=submit] {
 a:hover {
     text-decoration: none;
 }
+
+.card-deck{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+div.editing {
+    text-align: center;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.blog-post-title a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+#menubtn1 .btn-secondary, #menubtn2 .btn-secondary {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1em;
+    vertical-align: 0;
+}
+
+#menubtn1 .btn, #menubtn2 .btn {
+    padding: 0;
+    display: inline;
+}
+
+#menubtn1 .btn:hover, #menubtn2 .btn:hover {
+    color: #434A70;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+    display: inline;
+}
+
+#menubtn1 .dropdown-menu.show, #menubtn2 .dropdown-menu.show {
+    background-color: #434A70 ;
+    color: #EC5F5D;
+    font-size: 1em;
+}
+
+#menubtn1 .dropdown-item, #menubtn2 .dropdown-item {
+    color: white;
+}
+
+#menubtn1 .dropdown-item:hover, #menubtn2 .dropdown-item:hover {
+    color: white;
+    background-color: #EC5F5D;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#topbanner {
+    margin-top: 3.5%;
+}
+
+
+

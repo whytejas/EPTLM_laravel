@@ -14,43 +14,69 @@
 */
 
 Route::get('/', function () {
-    return view('main');
-});
-
-Route::get('/main', function () {
-    return view('main');
+    return view('main.home');
 });
 
 
 Route::get('/about', function () {
 
-    return view('about');
+    return view('main.about');
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('main.contact');
 });
 
 
 Route::get('/form', function () {
-    return view('form');
+    return view('main.form');
 });
 
 
 
 Route::get('/privacy', function () {
-    return view('privacy');
+    return view('main.privacy');
 });
 
-Route::get('/news', function () {
-    return view('news');
+Route::get('/blog', function () {
+    return view('main.blog');
 });
 
 Route::get('/volunteer', function () {
-    return view('volunteer');
+    return view('main.getinvolved.volunteer');
+});
+
+Route::get('/orientation', function () {
+    return view('main.getinvolved.orientation');
 });
 
 
+Route::get('/classroom', function () {
+    return view('main.programmes.classroom');
+});
+
+Route::get('/tutor', function () {
+    return view('main.programmes.tutor');
+});
+
+
+
+Route::get('/blog', 'ArticlesController@index');
+
+
+Route::get('/admin', 'ArticlesController@blogAdmin');
+
+
+Route::resource('articles', 'ArticlesController');
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 
