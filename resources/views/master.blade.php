@@ -6,7 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="yDaczUYLpAmBtumcBw_f6RCQe8QY5X23_x7Ru9Z4LyA" />
-
+    <meta name="description" content="English Pour Tout Le Monde">
+    <meta name="keywords" content="volunteer,english,Paris,teaching,refugees,homeless,migrants,asylum" translate="yes">
+    <meta name="author" content="English Pour Tout Le Monde">
     <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16" />
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap" rel="stylesheet">

@@ -14,6 +14,7 @@
 */
 
 Route::get('/', function () {
+
     return view('main.home');
 });
 
@@ -82,8 +83,6 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 Route::post('/formInput', 'Controller@formSubmit');
-
-
 
 
 

@@ -5,7 +5,7 @@
 <h1>Write a new article</h1>
 
 <div class="articles">
-    {!! Form::open(['url' => 'articles']) !!}
+    {!! Form::open(['url' => 'articles', 'files' => true]) !!}
 
     @include('articles.form', ['submitBtnText'=> 'Add New Article'])
 

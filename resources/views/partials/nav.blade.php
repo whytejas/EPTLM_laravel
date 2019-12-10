@@ -2,9 +2,26 @@
 
     <ul>
         <li><a href="{{ url('/') }}">Home</a></li>
-        <li><a href="{{ url('/about') }}">About</a></li>
-        {{--<li><a href="{{ url('/volunteer') }}">Programmes</a></li>
-        <li><a href="{{ url('/getinvolved')}}">Get Involved</a></li>--}}
+
+
+        <li>
+            <div id="menubtn1" class="menubtn dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="{{ url('/about') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/about#anchor1">What is EPTLM?</a>
+                    <a class="dropdown-item" href="/about#anchor2">Our Team</a>
+                    <a class="dropdown-item" href="/about#anchor3">Partners</a>
+
+                </div>
+            </div>
+        </li>
+
+
+
+
+
 
         <li>
             <div id="menubtn2" class="dropdown show">
@@ -19,7 +36,7 @@
         </li>
 
 <li>
-    <div id="menubtn1" class="dropdown show">
+    <div id="menubtn3" class="dropdown show">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Get Involved
         </a>
@@ -31,7 +48,23 @@
         </div>
     </div>
 </li>
-        <li><a href="{{ url('/blog') }}">Blog</a></li>
+
+
+        <li>
+            <div id="menubtn4" class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="{{ url('/blog') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blog
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                    <a class="dropdown-item" href="{{ url('/blog') }}">Latest Posts</a>
+                    <a class="dropdown-item" href="{{ url('/admin')}}">Login</a>
+
+                </div>
+            </div>
+        </li>
+
         <li><a href="{{ url('/contact') }}">Contact</a></li>
 
 

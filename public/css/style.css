@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #EC5F5D;
+    color: #eb5e57;
     text-align: center;
     text-shadow: 2px 4px 3px black;
     margin-bottom: 5%;
@@ -26,7 +26,7 @@ h1 {
 h2 {
     color: white;
     text-align: center;
-    background-color: #434A70;
+    background-color: #404369;
     padding: 1%;
     border-radius: 10px;
     margin-top: 5%;
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-    color: #434A70;
+    color: #404369;
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ header {
     left: 0;
     margin-right: auto;
     margin-left: auto;
-    background-color: #EC5F5D;
+    background-color: #eb5e57;
     z-index: 1;
 
 }
@@ -80,7 +80,7 @@ header nav,
 .menu nav {
     position: relative;
     top: 5px;
-    background-color: #434A70;
+    background-color: #404369;
     padding: 1px;
     width: 70%;
     margin-right: auto;
@@ -129,7 +129,7 @@ header nav li a {
 
 header nav li a:hover {
 
-    color: #434A70;
+    color: #404369;
     text-decoration: none;
     padding-bottom: 5px;
     font-size: 1.1em;
@@ -146,7 +146,7 @@ footer {
     bottom: 0;
     padding-left:0;
     background-color: #DCDCDC;
-    color:#434A70;
+    color:#404369;
     text-align: center;
     font-size: 0.7em;
     font-weight: bold;
@@ -157,7 +157,7 @@ footer {
 #footer a {
 
     text-decoration: none;
-    color: #EC5F5D;
+    color: #eb5e57;
 }
 
 .fa {
@@ -224,12 +224,12 @@ footer button a {
 
 .intro a {
     text-decoration: none;
-    color: #434A70;
+    color: #404369;
 
 }
 
 a.linkTop, div.polaroid a {
-    color: #EC5F5D;
+    color: #eb5e57;
 
     text-decoration: none;
 
@@ -244,13 +244,13 @@ a.linkTop {
 }
 
 a:hover.linkTop, div.polaroid a:hover {
-    color: #434A70;
+    color: #404369;
     font-size: 1.1em;
 }
 
 .intro a:hover {
     text-decoration: none;
-    color: #EC5F5D;
+    color: #eb5e57;
     font-size: 1.1em;
 
 }
@@ -298,7 +298,7 @@ div.team div.col {
     text-align: center;
     border-radius: 5px;
     padding: 1%;
-    background-color: #434A70;
+    background-color: #404369;
     color: white;
 
 }
@@ -310,7 +310,7 @@ div.polaroid {
     display:block;
     width: 80%;
 
-    background-color:#EC5F5D;
+    background-color:#eb5e57;
     box-shadow: 0 4px 8px 0 rgba(240, 229, 229, 0.2), 0 6px 20px 0 rgba(236, 233, 233, 0.19);
 }
 
@@ -328,7 +328,7 @@ div.container {
     margin-right:auto;
 
     width: 250px;
-    height: 250px;
+
 
 
 
@@ -351,7 +351,7 @@ div.container {
 .support ul li::before, .orientation ul li::before, .volunteerRoles ul li::before, .whyVolunteer ul li::before {
     content: "\2022";
     /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #EC5F5D;
+    color: #eb5e57;
     font-weight: bold;
     font-size: 1.5em;
     display: inline-block;
@@ -366,7 +366,7 @@ div.container {
 .partnerships ul li a,
 .support ul li a, .orientation ul li, .volunteerRoles ul li,  .whyVolunteer ul li {
     text-decoration: none;
-    color: #434A70;
+    color: #404369;
 }
 
 
@@ -435,11 +435,11 @@ div.container {
     margin-left: auto;
     margin-right:auto;
     margin-bottom: 5%;
-    background-color: #434A70;
+    background-color: #404369;
     text-align: left;
     padding-left: 25px;
     padding-right: 25px;
-    border: solid 2px #EC5F5D;
+    border: solid 2px #eb5e57;
     border-radius: 5px;
 
 
@@ -450,7 +450,7 @@ div.container {
     text-align: left;
     padding-left: 25px;
     padding-right: 25px;
-    border: solid 2px #EC5F5D;
+    border: solid 2px #eb5e57;
     border-radius: 5px;
     width: 50%;
     margin-right:auto;
@@ -514,14 +514,14 @@ textarea.form-control {
 input[type=submit] {
 
     width: auto;
-    background-color: #EC5F5D;
+    background-color: #eb5e57;
     color: white;
     margin-top: 0px;
     padding-top: 5px;
     padding-bottom: 15px;
     text-align: center;
     margin-bottom: 5px;
-    border-bottom: solid white 4px;
+    border-bottom: solid #404369 4px;
 }
 
 
@@ -536,7 +536,7 @@ select{
 
     width:100%;
     height:100%;
-    background-color: #EC5F5D;
+    background-color: #eb5e57;
     text-align:center;
     padding-top: 50px;
 }
@@ -592,7 +592,7 @@ select{
 /* BOOTSTRAP */
 
 .btn-light {
-    background-color:#EC5F5D;
+    background-color:#eb5e57;
     color: white;
     border: none;
 }
@@ -614,9 +614,14 @@ a:hover {
     width: 80%;
 }
 
+.card-deck a {
+    text-decoration: none;
+    color: white;
+}
 
 div.editing {
     text-align: center;
+    margin-top: 10%;
 }
 
 .card-text {
@@ -649,40 +654,42 @@ div.editing {
 
 
 
-#menubtn1 .btn-secondary, #menubtn2 .btn-secondary {
+#menubtn1 .btn-secondary, #menubtn2 .btn-secondary, #menubtn3 .btn-secondary, #menubtn4 .btn-secondary   {
     background-color: transparent;
     border-color: transparent;
     font-size: 1em;
     vertical-align: 0;
 }
 
-#menubtn1 .btn, #menubtn2 .btn {
+#menubtn1 .btn, #menubtn2 .btn, #menubtn3 .btn, #menubtn4 .btn {
     padding: 0;
     display: inline;
 }
 
-#menubtn1 .btn:hover, #menubtn2 .btn:hover {
-    color: #434A70;
+#menubtn1 .btn:hover, #menubtn2 .btn:hover, #menubtn3 .btn:hover, #menubtn4 .btn:hover {
+    color: #404369;
     text-decoration: none;
     padding-bottom: 5px;
     font-size: 1.1em;
     display: inline;
 }
 
-#menubtn1 .dropdown-menu.show, #menubtn2 .dropdown-menu.show {
-    background-color: #434A70 ;
-    color: #EC5F5D;
+#menubtn1 .dropdown-menu.show, #menubtn2 .dropdown-menu.show, #menubtn3 .dropdown-menu.show, #menubtn4 .dropdown-menu.show {
+    background-color: #404369 ;
+    color: #eb5e57;
     font-size: 1em;
 }
 
-#menubtn1 .dropdown-item, #menubtn2 .dropdown-item {
+#menubtn1 .dropdown-item, #menubtn2 .dropdown-item, #menubtn3 .dropdown-item, #menubtn4 .dropdown-item {
     color: white;
 }
 
-#menubtn1 .dropdown-item:hover, #menubtn2 .dropdown-item:hover {
+#menubtn1 .dropdown-item:hover, #menubtn2 .dropdown-item:hover, #menubtn3 .dropdown-item:hover, #menubtn4 .dropdown-item:hover  {
     color: white;
-    background-color: #EC5F5D;
+    background-color: #eb5e57;
 }
+
+
 
 .header-img {
     width: 100%;
@@ -696,4 +703,29 @@ div.editing {
 }
 
 
+#form .error {
+    color: #eb5e57;
+    font-style: oblique;
+    font-size: 0.8em;
+}
+
+
+.blog-pagination {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 0.8em;
+
+
+}
+
+a.page-link {
+    color: white;
+    background-color: #404369;
+
+}
+.page-item.active .page-link {
+    background-color: #eb5e57;
+    border-color: white;
+}
 

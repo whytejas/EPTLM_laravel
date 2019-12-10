@@ -32,7 +32,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/articles';
+    protected $redirectTo = '/admin';
 
     /**
      * Create a new controller instance.
@@ -45,6 +45,7 @@ class LoginController extends Controller
     }
 
     public function logout(Request $request) {
+        $request->session()->flush();
         Auth::logout();
         return redirect('/login');
     }

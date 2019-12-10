@@ -7,6 +7,7 @@ use App\Http\Requests\ArticleRequest;
 use App\Tag;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 
 class ArticlesController extends Controller
@@ -27,7 +28,8 @@ class ArticlesController extends Controller
     {
 
 
-        $articles = Article::latest()->get();
+
+        $articles = Article::latest()->paginate(1);
         $user = User::class;
         return view('main.blog', compact('user'))->with('articles', $articles);
     }
@@ -36,11 +38,16 @@ class ArticlesController extends Controller
     public function blogAdmin()
     {
 
+        $user_name = Auth::user()->username;
+        session(['user_name' => $user_name]);
+        $value = session()->get('user_name');
 
-        $articles = Article::latest()->get();
+       $articles = Article::latest()->get();
 
         return view('articles.index')->with('articles', $articles);
     }
+
+
     /**
      * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -63,16 +70,39 @@ class ArticlesController extends Controller
 
     /**
      * @param ArticleRequest $request
+     * @param $article
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function store(ArticleRequest $request)
     {
 
-        $article = Auth::user()->articles()->create($request->all());
-//        $article = Article::create($request->all());
-        $article->tags()->attach($request->input(('tag_list')));
+        if($request->hasFile('Image')){
+            //get image file.
+            $image = $request->Image;
+            //get just extension.
+            $ext = $image->getClientOriginalExtension();
+            $original_filename = $image->getClientOriginalName();
+            //make a unique name
+            $filename = $original_filename;
+            $request->filename = $filename;
+            //upload the image
+//            $image->storeAs('pics', $filename);
+            $image->storeAs('images', $original_filename, 'public');
+//
+        }
 
-        flash()->success('Your article was successfully created!');
+
+
+
+
+        $article = Auth::user()->articles()->create($request->all());
+        $article->filename = $request->filename;
+        $article->save();
+
+//        $article = Article::create($request->all());
+      /*  $article->tags()->attach($request->input(('tag_list')));
+
+        flash()->success('Your article was successfully created!');*/
 
 
         return redirect('articles');
@@ -98,8 +128,24 @@ class ArticlesController extends Controller
     public function update(ArticleRequest $request, Article $article)
     {
 
+        if($request->hasFile('Image')){
+            //get image file.
+            $image = $request->Image;
+            //get just extension.
+            $ext = $image->getClientOriginalExtension();
+            $original_filename = $image->getClientOriginalName();
+            //make a unique name
+            $filename = $original_filename;
+            $request->filename = $filename;
+            //upload the image
+//            $image->storeAs('pics', $filename);
+            $image->storeAs('images', $original_filename, 'public');
+//
+        }
 
         $article->update($request->all());
+        $article->filename = $request->filename;
+        $article->save();
 
 //        $article->tags()->sync($request->input(('tag_list')));
 

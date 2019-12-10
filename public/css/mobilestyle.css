@@ -40,7 +40,7 @@ header nav li a, .menu nav li a {
     color: white;
 }
 
-#menubtn1  .dropdown-menu.show, #menubtn1 .btn-secondary, #menubtn2  .dropdown-menu.show, #menubtn2 .btn-secondary  {
+#menubtn1  .dropdown-menu.show, #menubtn1 .btn-secondary, #menubtn2  .dropdown-menu.show, #menubtn2 .btn-secondary , #menubtn3  .dropdown-menu.show, #menubtn3 .btn-secondary,  #menubtn4  .dropdown-menu.show, #menubtn4 .btn-secondary {
     font-size: 0.85em;
 }
 
@@ -116,7 +116,7 @@ div.team div.col {
 
 }
 .team img {
-    height: 5em;
+
     width: 5em;
    display: inline-block;
    margin-top:1%;

@@ -18,7 +18,7 @@
 
 <div class="form-group">
     {!! Form::label('Message', 'Message:') !!}
-    {!! Form::textarea('Message', null, ['class' => 'form-control']) !!}
+    {{ Form::textarea('Message', null, ['class' => 'form-control']) }}
 </div>
 
 <div class="g-recaptcha" data-sitekey="6LfCFMYUAAAAAP05UD0KT7AoZuIRUhhu6xzovDf2"></div>

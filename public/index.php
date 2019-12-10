@@ -37,6 +37,10 @@ require __DIR__.'/../EPTLM_laravel/vendor/autoload.php';
 
 $app = require_once __DIR__.'/../EPTLM_laravel/bootstrap/app.php';
 
+$app->bind('path.public', function(){
+    return __DIR__;
+});
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -58,3 +62,6 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+
+
+

@@ -5,12 +5,11 @@
 
 
 
-   <h1> {{$article->Title}}</h1>
+
 
 
    <div class="editing">
-       <p>by
-       <h4>{{ucfirst($user->username)}}</h4></p>
+       <h1> {{$article->Title}}</h1>
        <div class="btn-group" role="group" aria-label="Basic example">
            <button type="button" class="btn btn-secondary btn-light"><a href="{{ action('ArticlesController@edit', [$article->id])}}">Edit this Post</a></button>
            <button type="button" class="btn btn-secondary btn-light"><a href="{{ action('ArticlesController@create')}}">Write a New Post</a></button>
@@ -19,7 +18,30 @@
        </div>
    </div>
 
+
+
+
+   <div class="col-md-6 offset-md-3 book-desc">
+       <div class="card">
+
+           <div class="card-body">
+{{--               <h1>{{ $article->Title}}</h1>--}}
+               <img class="card-img-top" src="{{asset('/uploads/blog/images/'.$article->filename) }}" alt="{{$article->filename}}">
+{{--               <h4 class="card-title">Book No: {{ $book->id}}</h4>--}}
+               <p class="card-text">
+                  Written by <strong>{{ucfirst($article->user->username)}}</strong>
+               </p>
+               <a href="{{ url('/admin') }}" class="btn btn-dark">Back to Blog Admin page</a>
+           </div>
+       </div>
+   </div>
+
+
+
+
+
    <article>
+
        <div class="content"><p>
            {!! $article->Content !!}
            </p>

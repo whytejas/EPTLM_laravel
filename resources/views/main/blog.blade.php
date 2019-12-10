@@ -9,7 +9,7 @@
     <div class="container">
 
 
-        <div class="nav-scroller py-1 mb-2">
+       {{-- <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
                 <a class="p-2 text-muted" href="#">World</a>
                 <a class="p-2 text-muted" href="#">Paris</a>
@@ -19,17 +19,17 @@
                 <a class="p-2 text-muted" href="#">Health</a>
 
             </nav>
-        </div>
+        </div>--}}
 
-        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+      {{--  <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">The EPTLM Blog will be up and running soon! </h1>
                 <p class="lead my-3">Watch this space for more!!</p>
                 <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
             </div>
-        </div>
+        </div>--}}
 
-        <div class="row mb-2">
+      {{--  <div class="row mb-2">
             <div class="col-md-6">
                 <div class="card flex-md-row mb-4 box-shadow h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
 
     <main role="main" class="container">
         <div class="row">
@@ -70,11 +70,12 @@
 
                 @foreach($articles as $article)
 
+
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="{{ action('ArticlesController@show', [$article->id])}}">{{$article->Title}}</a></h2>
                         <p class="blog-post-meta">by {{ucfirst($article->user()->value('username'))}} :: {{$article->created_at->diffForHumans()}}  </p>
 
-
+                        <img class="card-img-top" src="{{asset('/uploads/blog/images/'.$article->filename) }}" alt="{{$article->filename}}">
 
                         <p>{!!$article->Content!!}</p>
 
@@ -90,9 +91,12 @@
 
 
 
+
+
+
                 <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="#">Older</a>
-                    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+                    {{ $articles->links() }}
+
                 </nav>
 
             </div><!-- /.blog-main -->
@@ -135,7 +139,7 @@
 
     </main><!-- /.container -->
 
-
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -7,6 +7,19 @@ use Illuminate\Foundation\Http\FormRequest;
 class ArticleRequest extends FormRequest
 {
     /**
+     * @var string|null
+     */
+    public $mime;
+    /**
+     * @var string|null
+     */
+    public $original_filename;
+    /**
+     * @var string
+     */
+    public $filename;
+
+    /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
@@ -23,11 +36,12 @@ class ArticleRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+        return array(
             //
 
             'Title' => 'required|min:5',
-            'Content' => 'required'
-        ];
+            'Content' => 'required',
+            'Image' => 'nullable'
+        );
     }
 }
