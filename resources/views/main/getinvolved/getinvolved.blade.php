@@ -35,15 +35,15 @@
         <p> We will cover the following topics in the orientation session: </p><br>
         <ul class="list-group list-group-flush">
 
-            <li class="list-group-item">An introduction to EPTLM’s history, objectives and our core team</li>
+            <li class="list-group-item">An introduction to English Pour Tout Le Monde’s history, objectives and our core team</li>
             <li class="list-group-item">Explanation of our volunteering opportunities</li>
-            <li class="list-group-item">Guidance for volunteering with EPTLM</li>
+            <li class="list-group-item">Guidance for volunteering with English Pour Tout Le Monde</li>
             <li class="list-group-item">Group discussion of ideas!</li>
         </ul>
 
         <p> <br>We will give all attendees our official documentation; volunteer guidelines and safeguarding forms.
             <br> <br>
-            Our orientation sessions are a relaxed get together, serving not only as a chance to learn more about EPTLM but also for new and existing volunteers and EPTLM team members to socialise.</p>
+            Our orientation sessions are a relaxed get together, serving not only as a chance to learn more about English Pour Tout Le Monde but also for new and existing volunteers and English Pour Tout Le Monde team members to socialise.</p>
 
 
     </div>

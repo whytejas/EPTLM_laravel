@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'volunteer',
         'passwords' => 'users',
     ],
 
@@ -41,10 +41,17 @@ return [
             'provider' => 'users',
         ],
 
+
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
+        ],
+
+        'volunteer' => [
+            'driver' => 'session',
+            'provider' => 'volunteers',
         ],
     ],
 
@@ -71,6 +78,10 @@ return [
             'model' => App\User::class,
         ],
 
+        'volunteers' => [
+            'driver' => 'eloquent',
+            'model' => App\Volunteer::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -95,6 +106,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+
+        'volunteers' => [
+            'provider' => 'volunteers',
             'table' => 'password_resets',
             'expire' => 60,
         ],

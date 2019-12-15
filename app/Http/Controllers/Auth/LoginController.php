@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Volunteer;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
@@ -41,12 +43,45 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+
+        $this->middleware('guest')->except('logout');;
+//        $this->middleware('auth.volunteer')->except('logout');
     }
+
+
+
+    public function showVolunteerLoginForm()
+    {
+        return view('auth.login', ['url' => 'volunteer']);
+    }
+
+    public function volunteerLogin(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'username' => 'required',
+                'password' => 'required|min:6'
+            ]);
+        } catch (ValidationException $e) {
+        }
+
+        if (Auth::guard('volunteer')->attempt(['username' => $request->username, 'password' => $request->password], $request->get('remember'))) {
+            $volunteer = $request->all();
+
+            return redirect()->intended('volunteer/dashboard');
+        }
+        return back()->withInput($request->only('username', 'remember'));
+    }
+
 
     public function logout(Request $request) {
         $request->session()->flush();
         Auth::logout();
-        return redirect('/login');
+        return redirect('/');
     }
+
+
+
+
+
 }

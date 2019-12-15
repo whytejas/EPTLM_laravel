@@ -31,7 +31,7 @@
         <div id="anchor1"></div>
         <br>
         <div class="whatIsEPTLM">
-            <h1>What is EPTLM ?</h1>
+            <h1>What is English Pour Tout Le Monde ?</h1>
             <div>
                 <h2>Our Mission Statement</h2>
 
@@ -46,7 +46,7 @@
                 <h2> Our Core Values</h2>
 
                 <p>
-                    Our EPTLM team truly believes that providing education to everyone (pour tout le monde) is essential to developing a more sustainable society. Combined with building compassion through relationships across all walks of life, together we can build a more kind and inclusive society.
+                    The English Pour Tout Le Monde team truly believes that providing education to everyone (pour tout le monde) is essential to developing a more sustainable society. Combined with building compassion through relationships across all walks of life, together we can build a more kind and inclusive society.
                     <br><br>
                     As our team member <a href="#Tejas">Tejas </a>wrote:
                     <blockquote class="blockquote text-center">
@@ -56,7 +56,7 @@
 
                     Learning a new language is always an invaluable tool and it has been proven that having English language skills can aid individuals in the job and education spheres. Therefore, we hope through English exchange we can offer individuals access to more opportunities.
                     <br><br>
-                    EPTLM work on a cooperative basis; we want all our participants to have a say in the way EPTLM programmes are run. We hold monthly meet-ups (open to all), to not only socialise but importantly to share and discuss how we can improve our work.
+                    English Pour Tout Le Monde works on a cooperative basis; we want all our participants to have a say in the way our programmes are run. We hold monthly meet-ups (open to all), to not only socialise but importantly to share and discuss how we can improve our work.
 
                 </p>
 
@@ -84,11 +84,11 @@
 
                     <br><br>
                     <button class="btn btn-lg btn-light" data-toggle="collapse" data-target="#demo1">Read Bio</button><br><br>
-                    <div id="demo1" class="collapse"> In 2016 Katie moved to Paris and has since tutored english and worked for an NGO running a volunteer food distribution programme. Whilst working in the NGO sector in Paris she continually met able and inspiring individuals on the streets who wanted to practice and improve their English language skills, but didn’t have the opportunity to do so. With this in mind, she along with the other co-founders decided to create EPTLM. She now together with her team, coordinates the growth and day to day activities of EPTLM.
+                    <div id="demo1" class="collapse"> In 2016 Katie moved to Paris and has since tutored english and worked for an NGO running a volunteer food distribution programme. Whilst working in the NGO sector in Paris she continually met able and inspiring individuals on the streets who wanted to practice and improve their English language skills, but didn’t have the opportunity to do so. With this in mind, she along with the other co-founders decided to create English Pour Tout Le Monde. She now together with her team, coordinates the growth and day to day activities of English Pour Tout Le Monde.
                         <br>
                         Katie loves to read, hike and travel to learn about new cultures. She also co-created and runs a successful social action book club at Shakespeare and Co.
                         <br>
-                        Katie believes that there is hope for a positive future for ALL, and intends that EPTLM will be part of that future.
+                        Katie believes that there is hope for a positive future for ALL, and intends that English Pour Tout Le Monde will be part of that future.
 
 
                     </div>
@@ -102,11 +102,11 @@
                     <button class="btn btn-lg btn-light" data-toggle="collapse" data-target="#demo4">Read Bio</button><br><br>
 
 
-                    <div id="demo4" class="collapse">Since moving to Paris in 2012, Kathryn has been increasingly concerned by the ever-growing refugee/migrant and homeless crisis. As a result, she started to volunteer with food distribution charities in Paris and really valued the interactions with the people she was meeting on the streets. This then led to joining the EPTLM team where she helps coordinate the classroom sessions and support the overall growth of EPTLM.
+                    <div id="demo4" class="collapse">Since moving to Paris in 2012, Kathryn has been increasingly concerned by the ever-growing refugee/migrant and homeless crisis. As a result, she started to volunteer with food distribution charities in Paris and really valued the interactions with the people she was meeting on the streets. This then led to joining the English Pour Tout Le Monde team where she helps coordinate the classroom sessions and support the overall growth of English Pour Tout Le Monde.
                         <br>
                         Kathryn really believes in the importance of taking time to exchange with people and that even where a common language is limited, very valuable and warm connections can be made.
                         <br>
-                        Outside of EPTLM, Kathryn continues to work with food distribution charities and link with other associations offering support to the refugee/migrant population. She also enjoys reading, music and Pilates
+                        Outside of English Pour Tout Le Monde, Kathryn continues to work with food distribution charities and link with other associations offering support to the refugee/migrant population. She also enjoys reading, music and Pilates
 
 
 
@@ -148,7 +148,7 @@
 
                         Lindsay moved to Paris in August 2018. Immediately confronted by the plight of homeless in the streets, she reached out to a previous charity organisation in Brussels (where she had lived before). Via this charity she made contact and was immediately welcomed. Through this organisation of food distribution to the homeless she found P’tit Dej.
                         <br>
-                        She is currently assisting with the setup of EPTLM and enjoying making friends and helping the lovely young people that come along each week, eager to learn English. She is not a teacher but has worked with teenagers in the past training sport teams, and as a personal trainer. Plus having her own two kids in their twenties can empathise with the group.
+                        She is currently assisting with the setup of English Pour Tout Le Monde and enjoying making friends and helping the lovely young people that come along each week, eager to learn English. She is not a teacher but has worked with teenagers in the past training sport teams, and as a personal trainer. Plus having her own two kids in their twenties can empathise with the group.
                         <br>
                         Lindsay would encourage anyone interested in helping to come along and meet us. You could make a difference.
 
@@ -165,7 +165,7 @@
 
 
                     <div id="demo3" class="collapse">
-                        Tejas grew up in India. He trained in the UK and obtained a PhD in the US before moving to Paris in 2017 to work as a molecular biologist. Currently, Tejas assists with web and project development at EPTLM. Themes of belonging, race, immigration and identity are close to his heart. When he isn't writing or coding, Tejas enjoys a good coffee, reading, traveling to new places and learning new languages.
+                        Tejas grew up in India. He trained in the UK and obtained a PhD in the US before moving to Paris in 2017 to work as a molecular biologist. Currently, Tejas assists with web and project development at English Pour Tout Le Monde. Themes of belonging, race, immigration and identity are close to his heart. When he isn't writing or coding, Tejas enjoys a good coffee, reading, traveling to new places and learning new languages.
 
 
                     </div>

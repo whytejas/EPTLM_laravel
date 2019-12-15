@@ -10,11 +10,11 @@
     <div>
 
 <span id="footer"><a href="{{url('/contact')}}">Contact Us</a><br>
-© English Pour Tout Le Monde :  (EPTLM) 2019<br>
+© English Pour Tout Le Monde : (EPTLM) 2019<br>
 
          <a href="{{url('/privacy')}}">Privacy Policy</a></span>
 
     </div>
     <br>
-    <button type="button" class="btn btn-dark"><a href="{{url('/logout')}}">Logout</a></button>
+    <button type="button" class="btn btn-danger"><a href="{{url('/logout')}}">Logout</a></button>
 </footer>

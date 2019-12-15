@@ -14,7 +14,7 @@
 
 
             <p>
-                Every Tuesday and Thursday morning we meet with our volunteers at Jardin d’Éole and help serve breakfast with the association P’tit Dej (this is fun and good for practising french, but it is optional for EPTLM volunteers). Then at 9:30am we meet in the park with our students and walk together to our indoor space close by. We then teach English using worksheets, games and conversation until 11:30am.</p>
+                Every Tuesday and Thursday morning we meet with English Pour Tout Le Monde volunteers at Jardin d’Éole and help serve breakfast with the association P’tit Dej (this is fun and good for practising french, but it is optional for English Pour Tout Le Monde volunteers). Then at 9:30am we meet in the park with our students and walk together to our indoor space close by. We then teach English using worksheets, games and conversation until 11:30am.</p>
 
         {{--    <a class="linkTop" href="#top">Top</a>
             <br><br>--}}

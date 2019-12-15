@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\Volunteer;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -37,7 +39,20 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+
+
+        $this->middleware('guest:volunteer');
+    }
+
+
+    /**
+     * Get a validator for an incoming registration request.
+     *
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    public function showVolunteerRegisterForm()
+    {
+        return view('auth.volunteerRegister', ['url' => 'volunteer']);
     }
 
     /**
@@ -55,6 +70,9 @@ class RegisterController extends Controller
         ]);
     }
 
+
+
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -69,4 +87,23 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    protected function createVolunteer(Request $request)
+    {
+        $this->validator($request->all())->validate();
+        $volunteer = Volunteer::create([
+            'username' =>$request['username'],
+            'firstname' => $request['firstname'],
+            'lastname' => $request['lastname'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password']),
+        ]);
+        return redirect()->intended('volunteer/dashboard');
+    }
+
 }

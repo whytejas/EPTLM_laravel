@@ -9,7 +9,7 @@
     <img  class="header-img" src="{{ asset('/images/pages/tutor.jpg') }}" alt="tutor">
 
     <div class="content">
-    <p>We offer one to one tutoring for disadvantaged individuals who cannot come to our regular group sessions. We pair our volunteers with students and help with guidance and planning for tutoring sessions, in addition to providing worksheets and materials if needed.
+    <p>English Pour Tout Le Monde offers one to one tutoring for disadvantaged individuals who cannot come to our regular group sessions. We pair our volunteers with students and help with guidance and planning for tutoring sessions, in addition to providing worksheets and materials if needed.
         <br>
         This is a brilliant volunteering opportunity because you can form personal relationships and really make a direct difference in someone’s life.
         <br>

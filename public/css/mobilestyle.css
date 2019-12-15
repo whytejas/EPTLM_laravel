@@ -150,4 +150,23 @@ border-radius: 2em;
 
 }
 
+div.table-responsive {
+    width:95%;
+}
 
+
+div.table-responsive td {
+  font-size: 0.9em;
+}
+
+.dashboard-btn  {
+
+    grid-auto-flow: row;
+
+
+}
+
+
+.dashboard-btn a {
+    margin: 2%;
+}

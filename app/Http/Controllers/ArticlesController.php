@@ -76,23 +76,7 @@ class ArticlesController extends Controller
     public function store(ArticleRequest $request)
     {
 
-        if($request->hasFile('Image')){
-            //get image file.
-            $image = $request->Image;
-            //get just extension.
-            $ext = $image->getClientOriginalExtension();
-            $original_filename = $image->getClientOriginalName();
-            //make a unique name
-            $filename = $original_filename;
-            $request->filename = $filename;
-            //upload the image
-//            $image->storeAs('pics', $filename);
-            $image->storeAs('images', $original_filename, 'public');
-//
-        }
-
-
-
+        $this->imageStorage($request);
 
 
         $article = Auth::user()->articles()->create($request->all());
@@ -128,20 +112,7 @@ class ArticlesController extends Controller
     public function update(ArticleRequest $request, Article $article)
     {
 
-        if($request->hasFile('Image')){
-            //get image file.
-            $image = $request->Image;
-            //get just extension.
-            $ext = $image->getClientOriginalExtension();
-            $original_filename = $image->getClientOriginalName();
-            //make a unique name
-            $filename = $original_filename;
-            $request->filename = $filename;
-            //upload the image
-//            $image->storeAs('pics', $filename);
-            $image->storeAs('images', $original_filename, 'public');
-//
-        }
+        $this->imageStorage($request);
 
         $article->update($request->all());
         $article->filename = $request->filename;
@@ -161,6 +132,27 @@ class ArticlesController extends Controller
         return redirect('articles');
 
 
+    }
+
+    /**
+     * @param ArticleRequest $request
+     */
+    public function imageStorage(ArticleRequest $request)
+    {
+        if ($request->hasFile('Image')) {
+            //get image file.
+            $image = $request->Image;
+            //get just extension.
+            $ext = $image->getClientOriginalExtension();
+            $original_filename = $image->getClientOriginalName();
+            //make a unique name
+            $filename = $original_filename;
+            $request->filename = $filename;
+            //upload the image
+//            $image->storeAs('pics', $filename);
+            $image->storeAs('images', $original_filename, 'public');
+//
+        }
     }
 
 }
