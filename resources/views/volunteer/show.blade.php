@@ -12,7 +12,13 @@
         <h1> {{ucfirst($volunteer->firstname)}}'s Classroom Schedule</h1>
 
     </div>
+    <div class="dashboard-btn">
 
+        <a href="{{url('/volunteer/classroom_signup')}}" class="btn btn-success btn-lg btn-lg active" role="button" aria-pressed="true">Sign Up: Classroom Sessions</a>
+
+
+    </div>
+    <br> <br>
     <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
             <thead class="thead-light">

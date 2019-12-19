@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Volunteer;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
@@ -8,7 +10,9 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use App\Mail\MailtrapExample;
 use App\Mail\MailtoAdmin;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Response;
 
 class Controller extends BaseController
 {
@@ -68,4 +72,38 @@ else {
 
 
     }
+
+
+
+    public function getVolunteerDetails(Request $request){
+
+        $name = Input::get('name');
+        $volunteer =  Volunteer::where('firstname', $name)->first();
+
+        if($volunteer->lessons()->exists()){
+            $lessonsNext = $volunteer->lessons()->first()->session_date;
+            $lessons = Carbon::parse($lessonsNext)->format('d M Y');
+
+        }
+
+        else {
+            $lessons = "<br><strong><em>Not signed up for any upcoming sessions !</em></strong>";
+
+        }
+        if ($request){
+            $request = [
+                'volunteer' => $volunteer,
+                'lessons' => $lessons,
+            ];
+            return Response::json($request);
+        }
+
+        else {
+            return response()->json(['fail'=> "NO"]);
+        }
+    }
+
+
+
+
 }

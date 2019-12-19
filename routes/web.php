@@ -13,6 +13,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
 
     return view('main.home');
@@ -81,7 +83,6 @@ Route::post('/formInput', 'Controller@formSubmit');
 
 
 
-
 Auth::routes();
 
 
@@ -118,4 +119,19 @@ Route::group(['middleware' => 'auth.volunteer'], function () {
     Route::get('/volunteer/logout', 'LoginController@logout');
 });
 
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/lessons/create', 'LessonsController@create');
+    Route::post('/lessons/create', 'LessonsController@store');
+    Route::get('/lessons/edit/{id}', 'LessonsController@edit');
+    Route::patch('/lessons/edit/{id}', 'LessonsController@update');
+    Route::get('/lessons/delete/{id}', 'LessonsController@destroy');
+    Route::get('/lessons/list', 'LessonsController@list');
+});
+
+
+Route::get('/volunteer/directory', '\App\Http\Controllers\Auth\LoginController@directory');
+
+
+Route::get('/volunteer/directory/getvolunteer/', 'Controller@getVolunteerDetails');
 

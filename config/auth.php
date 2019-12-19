@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'volunteer',
+        'guard' => 'web',
         'passwords' => 'users',
     ],
 
@@ -53,6 +53,8 @@ return [
             'driver' => 'session',
             'provider' => 'volunteers',
         ],
+
+
     ],
 
     /*
@@ -82,10 +84,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Volunteer::class,
         ],
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+
     ],
 
     /*

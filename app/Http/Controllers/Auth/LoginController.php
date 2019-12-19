@@ -34,7 +34,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/admin';
+
 
     /**
      * Create a new controller instance.
@@ -43,9 +43,9 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+//        $this->middleware('auth:volunteer')->except('logout');
+        $this->middleware('guest')->except('logout');
 
-        $this->middleware('guest')->except('logout');;
-//        $this->middleware('auth.volunteer')->except('logout');
     }
 
 
@@ -59,8 +59,8 @@ class LoginController extends Controller
     {
         try {
             $this->validate($request, [
-                'username' => 'required',
-                'password' => 'required|min:6'
+                'username' => 'required|string',
+                'password' => 'required|string'
             ]);
         } catch (ValidationException $e) {
         }
@@ -75,9 +75,16 @@ class LoginController extends Controller
 
 
     public function logout(Request $request) {
-        $request->session()->flush();
+
         Auth::logout();
+        $request->session()->flush();
         return redirect('/');
+    }
+
+
+    public function directory(){
+        $volunteers = Volunteer::latest()->paginate(15);
+        return view('volunteer.directory', compact('volunteers'));
     }
 
 

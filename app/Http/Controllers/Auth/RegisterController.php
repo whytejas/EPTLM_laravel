@@ -103,7 +103,7 @@ class RegisterController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-        return redirect()->intended('volunteer/dashboard');
+        return redirect()->intended('volunteer.dashboard');
     }
 
 }

@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Authenticatable
 {
     use Notifiable;
+    protected $guard = 'web';
 
     /**
      * The attributes that are mass assignable.

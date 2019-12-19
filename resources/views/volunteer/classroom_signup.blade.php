@@ -24,7 +24,15 @@
 </div>
 
 
+<br>
+    <div class="dashboard-btn">
+        <a href="{{url('/volunteer/classroom_show')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">Manage Your Current Classroom Sessions</a>
 
+
+
+
+
+    </div>
 
    <br><br>
    <div class="table-responsive">
@@ -56,7 +64,7 @@
 
            <td>{{ \Carbon\Carbon::parse($lesson->session_date)->format('d M Y')}}</td>
            <td>{{ \Carbon\Carbon::parse($lesson->session_date)->format('l')}}</td>
-           <td>{{$lesson->total_volunteers}}</td>
+           <td>{{$lesson->volunteers->count()}}</td>
            <td>
 
 

@@ -44,7 +44,10 @@ class Volunteer extends Authenticatable
     }
 
 
-
+    public function getVolunteerNameAttribute($value)
+    {
+        return ucfirst($this->firstname) . ' ' . ucfirst($this->lastname);
+    }
 
 
 }

@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-
+    @include('partials.logo')
     <h1>Edit article: {{$article->Title}}</h1>
 
     <div class="articles">

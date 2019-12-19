@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Http\Requests\ArticleRequest;
+use App\Http\Requests\LessonRequest;
 use App\Lesson;
 use App\Tag;
 use App\User;
 use App\Volunteer;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Storage;
 
 
@@ -20,6 +23,8 @@ class LessonsController extends Controller
     public function __construct()
     {
 //        $this->middleware('auth', ['only' => ['create', 'edit', 'blogAdmin']]);
+
+
     }
 
 
@@ -31,9 +36,9 @@ class LessonsController extends Controller
 
 
 
-        $lessons = Lesson::latest()->get();
-//        $user = User::class;
-        return view('volunteer.classroom_signup')->with('lessons', $lessons);
+        $lessons = Lesson::latest()->where('session_date', '>', Carbon::today()->toDateString())->orderBy('session_date')->get();
+        $volunteers= Volunteer::pluck('firstname', 'lastname');
+        return view('volunteer.classroom_signup')->with('lessons', $lessons)->with('volunteers', $volunteers);
     }
 
 
@@ -63,17 +68,14 @@ class LessonsController extends Controller
 
         if ($lesson->volunteers()->where('volunteer_id', $volunteer->id)->doesntExist()){
 
-            $lesson->total_volunteers = $lesson->total_volunteers + 1;
+
             $lesson->updated_at = now();
             $lesson->save();
             $lesson->volunteers()->attach($volunteer);
         }
 
 
-        $lessons = Lesson::latest()->get();
-        $volunteers= Volunteer::pluck('firstname', 'lastname');
-
-        return view('volunteer.classroom_signup')->with('volunteers', $volunteers)->with('lessons', $lessons);
+       return $this->index();
     }
 
 
@@ -84,6 +86,73 @@ class LessonsController extends Controller
         $volunteer->lessons()->detach($id);
         return $this->show();
     }
+
+
+
+
+    public function create()
+    {
+
+        return view('volunteer.lessons.create');
+    }
+
+
+
+
+    public function store(LessonRequest $request)
+    {
+
+
+        $lesson = Lesson::create($request->all());
+        $lesson->save();
+        return $this->list();
+
+    }
+
+    /**
+     * @param $id
+     * @return string
+     */
+    public function edit($id)
+    {
+
+        $lesson = Lesson::find($id);
+        return view('volunteer.lessons.edit', compact('lesson'));
+
+
+
+
+    }
+
+
+    public function update($id, LessonRequest $request)
+    {
+
+        $lesson = Lesson::find($id);
+        $lesson->update($request->all());
+        $lesson->save();
+        return $this->list();
+    }
+
+
+
+    public function destroy($id){
+
+        $lesson = Lesson::where('id', $id)->delete();
+
+      return $this->list();
+
+
+    }
+
+
+    public function list()
+    {
+        $lessons = Lesson::latest()->where('session_date', '>', Carbon::today()->toDateString())->orderBy('session_date')->get();
+        $volunteers= Volunteer::pluck('firstname', 'lastname');
+        return view('volunteer.lessons.list')->with('lessons', $lessons)->with('volunteers', $volunteers);
+    }
+
 
 
 

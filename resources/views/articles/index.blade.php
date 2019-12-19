@@ -3,16 +3,23 @@
 @section('content')
 
 
+    @include('partials.logo')
 
+
+    <div>  <h1>Welcome {{ucfirst(session('user_name'))}}</h1></div>
+    <div class="dashboard-btn">
+        <a href="{{url('/lessons/list')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">GO TO: Classroom Sessions</a>
+        <a href="{{url('/admin')}}" class="btn btn-danger btn-lg btn-lg active" role="button" aria-pressed="true">Volunteer Directory</a>
+
+    </div>
     <div class="editing">
         <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary btn-light"><a href="{{ action('ArticlesController@create')}}">Write a New Post</a></button>
             <button type="button" class="btn btn-secondary btn-light"><a href="{{ action('ArticlesController@index')}}">All Posts</a></button>
 
         </div>
-    </div>
 
-  <div>  <h1>Welcome {{ucfirst(session('user_name'))}}</h1></div>
+    </div>
     <div class="card-deck">
     @foreach($articles as $article)
 

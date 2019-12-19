@@ -137,8 +137,7 @@ class ArticlesController extends Controller
     /**
      * @param ArticleRequest $request
      */
-    public function imageStorage(ArticleRequest $request)
-    {
+    public function imageStorage(ArticleRequest $request){
         if ($request->hasFile('Image')) {
             //get image file.
             $image = $request->Image;

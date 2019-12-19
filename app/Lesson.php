@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Lesson extends Model
@@ -15,6 +16,8 @@ class Lesson extends Model
         'total_volunteers',
         'created_at',
     ];
+
+
 
 
     public function volunteers()

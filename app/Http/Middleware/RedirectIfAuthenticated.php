@@ -20,7 +20,9 @@ class RedirectIfAuthenticated
         if (Auth::guard($guard)->check()) {
             return redirect('/home');
         }
-        if ($guard == "volunteer" && Auth::guard($guard)->check()) {
+
+
+        elseif ($guard == "volunteer" && Auth::guard($guard)->check()) {
             return redirect()->route('volunteer/dashboard');
         }
 
