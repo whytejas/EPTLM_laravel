@@ -9,7 +9,7 @@
     <div>  <h1>Welcome {{ucfirst(session('user_name'))}}</h1></div>
     <div class="dashboard-btn">
         <a href="{{url('/lessons/list')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">GO TO: Classroom Sessions</a>
-        <a href="{{url('/admin')}}" class="btn btn-danger btn-lg btn-lg active" role="button" aria-pressed="true">Volunteer Directory</a>
+        <a href="{{url('/directory')}}" class="btn btn-danger btn-lg btn-lg active" role="button" aria-pressed="true">Volunteer Directory</a>
 
     </div>
     <div class="editing">

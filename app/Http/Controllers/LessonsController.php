@@ -47,7 +47,7 @@ class LessonsController extends Controller
         $volunteer =  Auth::guard('volunteer')->user();
         if ($volunteer->lessons()->exists()){
 
-            $lessons = $volunteer->lessons()->get();
+            $lessons = $volunteer->lessons()->where('session_date', '>', Carbon::today()->toDateString())->orderBy('session_date')->get();
             return view('volunteer.show', compact('lessons', 'volunteer'));
         }
 

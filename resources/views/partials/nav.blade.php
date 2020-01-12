@@ -60,7 +60,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
                     <a class="dropdown-item" href="{{ url('/blog') }}">Latest Posts</a>
-                    <a class="dropdown-item" href="{{ url('/admin')}}">Login</a>
+
 
                 </div>
             </div>

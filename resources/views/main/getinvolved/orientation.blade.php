@@ -11,11 +11,11 @@
     <div>
         <p>
             To become a English Pour Tout Le Monde volunteer, you will begin by attending one of our orientation sessions. We hold orientation sessions twice a month; one evening and one morning.</p>
-        <p>    For December the date(s) and location(s) will be:</p>
+        <p>    For January 2020 the date(s) and location(s) will be:</p>
         <ul>
 
 
-            <li>Wednesday 4th December at 7:30am : Le Grande Breguet Cafe</li></ul>
+            <li>COMING SOON!</li></ul>
 
         <br><br>
         <p> We will cover the following topics in the orientation session: </p><br>

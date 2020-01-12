@@ -106,16 +106,10 @@ Route::group(['middleware' => 'auth.volunteer'], function () {
     Route::get('/volunteer/dashboard', function(){
     return view('volunteer.dashboard');
     });
-
     Route::get('/volunteer/classroom_signup', 'LessonsController@index')->name('lessonsIndex');
-
     Route::get('volunteer/lessons/signup/{id}', 'LessonsController@signUp');
-
     Route::get('volunteer/lessons/cancel/{id}', 'LessonsController@cancel');
-
-
     Route::get('/volunteer/classroom_show', 'LessonsController@show')->name('lessonsShow');
-
     Route::get('/volunteer/logout', 'LoginController@logout');
 });
 
@@ -127,11 +121,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::patch('/lessons/edit/{id}', 'LessonsController@update');
     Route::get('/lessons/delete/{id}', 'LessonsController@destroy');
     Route::get('/lessons/list', 'LessonsController@list');
+
+
+    Route::get('/volunteer/directory/getvolunteer/', 'Controller@getVolunteerDetails');
 });
 
 
-Route::get('/volunteer/directory', '\App\Http\Controllers\Auth\LoginController@directory');
 
 
-Route::get('/volunteer/directory/getvolunteer/', 'Controller@getVolunteerDetails');
-
+Route::get('/directory', '\App\Http\Controllers\Auth\LoginController@directory');

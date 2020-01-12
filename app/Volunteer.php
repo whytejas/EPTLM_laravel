@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Volunteer extends Authenticatable
 {
     use Notifiable;
-    protected $guard = 'volunteer';
+//    protected $guard = 'volunteer';
     /**
      * The attributes that are mass assignable.
      *
