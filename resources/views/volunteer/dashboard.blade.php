@@ -15,6 +15,8 @@
     <div class="content">
 
 <div class="dashboard-btn">
+    <a href="{{url('/volunteer/logout')}}" class="btn btn-dark btn-lg btn-lg active" role="button" aria-pressed="true">Logout</a>
+
         <a href="{{url('/volunteer/classroom_show')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">Manage Your Current Classroom Sessions</a>
 
         <a href="{{url('/volunteer/classroom_signup')}}" class="btn btn-success btn-lg btn-lg active" role="button" aria-pressed="true">Sign Up: Classroom Sessions</a>

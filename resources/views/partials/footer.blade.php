@@ -16,7 +16,6 @@
 
     </div>
     <br>
-    <button type="button" class="btn btn-success"><a href="{{url('/login')}}">Admin</a></button>
-    <br> <br>
-    <button type="button" class="btn btn-danger"><a href="{{url('/logout')}}">Logout</a></button>
+    <button type="button" class="btn btn-success"><a href="{{url('/admin')}}">Admin</a></button>
+
 </footer>

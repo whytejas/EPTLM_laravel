@@ -71,7 +71,7 @@ Route::get('/blog', 'ArticlesController@index');
 
 
 
-Route::get('/admin', 'ArticlesController@blogAdmin');
+
 
 
 
@@ -86,7 +86,10 @@ Route::post('/formInput', 'Controller@formSubmit');
 Auth::routes();
 
 
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/logout', function() {
+    Auth::logout();
+    return redirect('/');
+});
 Route::get('/register', '\App\Http\Controllers\Auth\LoginController@showLoginForm');
 
 
@@ -110,17 +113,20 @@ Route::group(['middleware' => 'auth.volunteer'], function () {
     Route::get('volunteer/lessons/signup/{id}', 'LessonsController@signUp');
     Route::get('volunteer/lessons/cancel/{id}', 'LessonsController@cancel');
     Route::get('/volunteer/classroom_show', 'LessonsController@show')->name('lessonsShow');
-    Route::get('/volunteer/logout', 'LoginController@logout');
+    Route::get('/volunteer/logout', 'Auth\LoginController@userLogout');
 });
 
 
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/admin', 'ArticlesController@blogAdmin');
     Route::get('/lessons/create', 'LessonsController@create');
     Route::post('/lessons/create', 'LessonsController@store');
     Route::get('/lessons/edit/{id}', 'LessonsController@edit');
     Route::patch('/lessons/edit/{id}', 'LessonsController@update');
     Route::get('/lessons/delete/{id}', 'LessonsController@destroy');
     Route::get('/lessons/list', 'LessonsController@list');
+
+    Route::get('/directory', '\App\Http\Controllers\Auth\LoginController@directory');
 
 
     Route::get('/volunteer/directory/getvolunteer/', 'Controller@getVolunteerDetails');
@@ -129,4 +135,4 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-Route::get('/directory', '\App\Http\Controllers\Auth\LoginController@directory');
+

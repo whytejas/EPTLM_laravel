@@ -80,7 +80,7 @@ else {
         $name = Input::get('name');
         $volunteer =  Volunteer::where('firstname', $name)->first();
 
-        if($volunteer->lessons()->exists()){
+        if($volunteer->lessons()->where('session_date', '>', Carbon::today())->exists()){
             $lessonsNext = $volunteer->lessons()->first()->session_date;
             $lessons = Carbon::parse($lessonsNext)->format('d M Y');
 

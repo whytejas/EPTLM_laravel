@@ -14,6 +14,8 @@
     </div>
 
     <div class="dashboard-btn">
+
+        <a href="{{url('/logout')}}" class="btn btn-dark btn-lg btn-lg active" role="button" aria-pressed="true">Logout</a>
         <a href="{{url('/lessons/create')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">Add a new Classroom Session</a>
 
         <a href="{{url('/admin')}}" class="btn btn-warning btn-lg btn-lg active" role="button" aria-pressed="true">Blog Articles</a>

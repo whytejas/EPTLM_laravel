@@ -3,16 +3,12 @@
 @section('content')
 
 
-
-
-
-
-
     <div class="editing">
         <h1> {{ucfirst($volunteer->firstname)}}'s Classroom Schedule</h1>
 
     </div>
     <div class="dashboard-btn">
+        <a href="{{url('/volunteer/logout')}}" class="btn btn-dark btn-lg btn-lg active" role="button" aria-pressed="true">Logout</a>
 
         <a href="{{url('/volunteer/classroom_signup')}}" class="btn btn-success btn-lg btn-lg active" role="button" aria-pressed="true">Sign Up: Classroom Sessions</a>
 

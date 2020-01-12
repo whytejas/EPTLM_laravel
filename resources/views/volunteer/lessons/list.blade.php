@@ -6,6 +6,8 @@
 @section('content')
 
     <div class="dashboard-btn">
+
+        <a href="{{url('/logout')}}" class="btn btn-dark btn-lg btn-lg active" role="button" aria-pressed="true">Logout</a>
         <a href="{{url('/admin')}}" class="btn btn-danger btn-lg btn-lg active" role="button" aria-pressed="true">Volunteer Directory</a>
         <a href="{{url('/admin')}}" class="btn btn-warning btn-lg btn-lg active" role="button" aria-pressed="true">Blog Articles</a>
     </div>
