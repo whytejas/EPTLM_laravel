@@ -8,10 +8,6 @@
     {!! Form::textarea('Content', null, ['class' => 'mytextarea form-control']) !!}
 </div>
 
-{{--<div class="form-group">
-    {!! Form::label('tag_list', 'Tags:') !!}
-    {!! Form::select('tag_list[]', $tags, null, ['id'=> 'tag_list', 'class' => 'form-control', 'multiple'=>'multiple']) !!}
-</div>--}}
 
 <div class="form-group">
     {!! Form::label('Image', 'Image:') !!}

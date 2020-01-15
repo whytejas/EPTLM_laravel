@@ -16,6 +16,6 @@
 
     </div>
     <br>
-    <button type="button" class="btn btn-success"><a href="{{url('/admin')}}">Admin</a></button>
+    <a class="btn btn-success" href="{{url('/admin')}}">Admin</a>
 
 </footer>

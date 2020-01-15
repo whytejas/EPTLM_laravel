@@ -17,15 +17,7 @@ use Illuminate\Support\Facades\Storage;
 
 class LessonsController extends Controller
 {
-    //
 
-
-    public function __construct()
-    {
-//        $this->middleware('auth', ['only' => ['create', 'edit', 'blogAdmin']]);
-
-
-    }
 
 
     /**

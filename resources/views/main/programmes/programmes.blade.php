@@ -55,28 +55,6 @@
             <a class="linkTop" href="#top2">Top</a>
 
 
-            <div>
-
-
-                {{--   <div>
-                       <h2> Long & Short Term Volunteers</h2>
-
-                       <p>
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet elementum felis. Cras
-                           tincidunt
-                           elementum ante, ac dignissim mauris eleifend ac. Donec mollis massa a sagittis tempus. Nam luctus purus
-                           a
-                           ligula ornare laoreet. Quisque dictum leo at turpis molestie, sed tempor magna auctor. Suspendisse sed
-                           tellus id erat ullamcorper dapibus. Nam porttitor imperdiet sapien vitae ultricies. Aliquam tincidunt
-                           felis
-                           quis lorem mollis, sit amet luctus nulla porta. Duis lobortis in magna a mattis. Proin consectetur
-                           turpis eu
-                           leo viverra, ut varius nulla suscipit. Cras ut scelerisque tortor, in rhoncus eros. Aliquam erat
-                           volutpat.
-                       </p>
-                       <a class="linkTop" href="#top2">Top</a>
-                   </div>--}}
-            </div>
 
         </div>
     </div>

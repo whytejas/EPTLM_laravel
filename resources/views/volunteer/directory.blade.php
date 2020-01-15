@@ -21,6 +21,21 @@
         <a href="{{url('/admin')}}" class="btn btn-warning btn-lg btn-lg active" role="button" aria-pressed="true">Blog Articles</a>
     </div>
 
+
+
+    <div>
+<h2>List of Volunteers</h2>
+        <ul>
+            @foreach ($volunteers->sortBy('lastname') as $volunteer)
+                <li> {{ucfirst($volunteer->firstname)}} {{strtoupper($volunteer->lastname) }}</li>
+            @endforeach
+        </ul>
+    </div>
+
+
+    <div id="volunteer_details" class="content">
+        <p>Choose a volunteer from the dropdown menu to see their details</p>
+    </div>
     <br><br>
     <div class="articles">
         {!! Form::open(['method' => 'get', 'url' => url('volunteer/directory/getvolunteer/')]) !!}
@@ -36,42 +51,6 @@
     @include('errors.list')
     </div>
     <br><br>
-<div id="volunteer_details" class="content">
-<p>Choose a volunteer from the dropdown menu to see their details</p>
-</div>
- {{--   <br> <br>
-    <div class="table-responsive">
-        <table class="table table-striped table-bordered table-hover">
-            <thead class="thead-light">
-            <tr>
-
-                <th scope="col">S.No</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Email</th>
-
-            </tr>
-            </thead>
-            <tbody>
-
-
-            @foreach($volunteers as $volunteer)
-
-                <tr>
-                    <th scope="row">{{ $loop->iteration }}</th>
-                    <td>{{ucfirst($volunteer->firstname)}}</td>
-                    <td>{{ucfirst($volunteer->lastname)}}</td>
-                    <td>{{ucfirst($volunteer->email)}}</td>
-
-
-                </tr>
-
-            @endforeach
-            </tbody>
-        </table>
-    </div>
---}}
-
 
 
 

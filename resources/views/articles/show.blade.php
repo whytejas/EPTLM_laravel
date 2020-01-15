@@ -53,16 +53,6 @@
    {!! Form::submit('Delete This Post', ['class' => 'btn btn-primary form-control deletebutton']) !!}
    {!! Form::close() !!}
 
-  {{-- @if($article->tags)
-    <h5>Tags:</h5>
-    <ul>
-        @foreach($article->tags as $tag)
-            <li>{{$tag->name}}</li>
-            @endforeach
-    </ul>
-
-    @endif
---}}
 
 
 

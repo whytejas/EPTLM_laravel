@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="#anchor5">Orientation Sessions</a></li>
                     <li><a href="{{url('/contact')}}">Volunteer</a></li>
-{{--                    <li><a href="#anchor7">Support EPTLM</a></li>--}}
+
                 </ul>
             </nav>
         </div>
@@ -54,21 +54,6 @@
         <a class="linkTop" href="#top2">Top</a>
     </div>
 
-
-  {{--  <div id="anchor7"></div>
-    <div class="support">
-        <br>
-        <h1> Support EPTLM </h1>
-
-        <h3> How can you support us?</h3>
-        <ul>
-            <li><a href="#">Become an EPTLM Supporter</a></li>
-            <li><a href="#">Sponsor</a></li>
-            <li><a href="#">Donate</a></li>
-        </ul>
-
-        <a class="linkTop" href="#top2">Top</a>
-    </div>--}}
 
 
 @stop

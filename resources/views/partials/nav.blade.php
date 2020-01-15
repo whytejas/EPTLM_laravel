@@ -6,10 +6,10 @@
 
         <li>
             <div id="menubtn1" class="menubtn dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="{{ url('/about') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn btn-secondary dropdown-toggle" href="{{ url('/about') }}" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
                     <a class="dropdown-item" href="/about#anchor1">What is EPTLM?</a>
                     <a class="dropdown-item" href="/about#anchor2">Our Team</a>
                     <a class="dropdown-item" href="/about#anchor3">Partners</a>
@@ -25,10 +25,10 @@
 
         <li>
             <div id="menubtn2" class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Programmes </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
                     <a class="dropdown-item" href="{{ url('/classroom') }}">Classroom Teaching</a>
                     <a class="dropdown-item" href="{{ url('/tutor')}}">One-to-One Tutoring</a>
                 </div>
@@ -37,11 +37,11 @@
 
 <li>
     <div id="menubtn3" class="dropdown show">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Get Involved
         </a>
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
             <a class="dropdown-item" href="{{ url('/orientation') }}">Orientation</a>
             <a class="dropdown-item" href="{{ url('/volunteer')}}">Volunteer</a>
             <a class="dropdown-item" href="{{ url('/volunteer/login')}}">Volunteer Login</a>
@@ -53,11 +53,11 @@
 
         <li>
             <div id="menubtn4" class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="{{ url('/blog') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn btn-secondary dropdown-toggle" href="{{ url('/blog') }}" role="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Blog
                 </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
 
                     <a class="dropdown-item" href="{{ url('/blog') }}">Latest Posts</a>
 

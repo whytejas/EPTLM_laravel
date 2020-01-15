@@ -38,18 +38,6 @@
 
 
 
-
-{{--<div>
-        <article>
-            <ul>
-                <li><h4><a href="{{ action('ArticlesController@show', [$article->id])}}">{{$article->Title}}</a></h4></li>
-            </ul>
-
-
-
-        </article>
-</div>--}}
-
     @endforeach
     </div>
 @stop

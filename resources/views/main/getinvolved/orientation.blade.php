@@ -37,7 +37,7 @@
             If you would like to volunteer with us in any capacity, however big or small, we would love to hear from you! Please drop us an email at
             <a href="mailto:info@eptlm.com">info@eptlm.com</a> or <a href="{{url('/contact')}}" target="_blank">Contact Us</a>.</strong>
 
-{{--        <a class="linkTop" href="#top2">Top</a>--}}
+
     </p>
 
 

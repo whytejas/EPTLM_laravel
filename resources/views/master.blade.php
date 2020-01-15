@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="yDaczUYLpAmBtumcBw_f6RCQe8QY5X23_x7Ru9Z4LyA" />
     <meta name="description" content="English Pour Tout Le Monde">
@@ -49,7 +48,8 @@
         });
     </script>
 
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"0cef73766ed443d90ab5f29d2","lid":"ab0f69f92b","uniqueMethods":true}) })</script>
+    <script src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script>window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"0cef73766ed443d90ab5f29d2","lid":"ab0f69f92b","uniqueMethods":true}) })</script>
 
     <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 </head>

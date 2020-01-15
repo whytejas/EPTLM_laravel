@@ -83,11 +83,6 @@ class ArticlesController extends Controller
         $article->filename = $request->filename;
         $article->save();
 
-//        $article = Article::create($request->all());
-      /*  $article->tags()->attach($request->input(('tag_list')));
-
-        flash()->success('Your article was successfully created!');*/
-
 
         return redirect('articles');
     }

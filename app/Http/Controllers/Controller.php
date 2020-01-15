@@ -34,7 +34,7 @@ class Controller extends BaseController
             $key = '6LfCFMYUAAAAANWUfctD3cDQcfTzckFu5iLiVpVd';
             $url = 'https://www.google.com/recaptcha/api/siteverify';
 
-            // RECAPTCH RESPONSE
+            // RECAPTCHA RESPONSE
             $recaptcha_response = file_get_contents($url.'?secret='.$key.'&response='.$captcha.'&remoteip='.$ip);
             $data = json_decode($recaptcha_response);
 

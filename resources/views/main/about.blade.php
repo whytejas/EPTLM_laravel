@@ -13,17 +13,7 @@
         <div id="top"></div>
         <br><br>
         <h1 >About</h1>
-  {{--      <div class="menu">
-            <nav>
 
-                <ul>
-                    <li><a href="#anchor1">EPTLM</a></li>
-                    <li><a href="#anchor3">Team</a></li>
-                    <li><a href="#anchor4">Partnerships</a></li>
-
-                </ul>
-            </nav>
-        </div>--}}
 
     </div>
     <img  class="header-img" src="{{ asset('/images/pages/about.jpg') }}" alt="about">
@@ -74,7 +64,7 @@
         <div class="teamMembers">
             <br> <br>
             <h1> Our Team </h1>
-            <div class="team" class="row">
+            <div class="team">
 
                 <div class="col">
                     <div class="polaroid"> <img src="{{ asset('/images/team/katieOGILVIE.jpg') }}"  alt="Katie Ogilvie">
@@ -114,25 +104,6 @@
 
                 </div>
 
-               {{-- <div class="col">
-                    <div class="polaroid"> <img src="{{ asset('/images/team/davidBURT.jpg') }}" alt="David Burt" >
-                        <div class="container"><a href="mailto:david@eptlm.com">David BURT</a><br>
-                            Secretary & Treasurer</div>
-                    </div>
-
-                    <br><br>
-                    <button class="btn btn-lg btn-light" data-toggle="collapse" data-target="#demo2">Read Bio</button><br><br>
-                    <div id="demo2" class="collapse">With many years experience as an international business consultant
-                        specialising in Human Resources and project management, David brings a
-                        wealth of commercial acumen to EPTLM. Passionate about human rights, he
-                        helped to co - found the Association in early 2019 and was appointed as
-                        its secretary and treasurer at the time of its formal incorporation in
-                        France.<br>With particular specialisms in learning & development, coaching and
-                        mentoring, David is a key part of our development work both with those
-                        we help to learn English and our volunteers. In his spare time, David is a road cyclist,
-                        walker, cook and supporter of Tottenham Hotspur F.C., as well as being a keen student of
-                        French and the ukulele.
-                    </div></div>--}}
 
 
                 <div class="col">
