@@ -42,7 +42,7 @@ class ArticlesController extends Controller
         session(['user_name' => $user_name]);
         $value = session()->get('user_name');
 
-       $articles = Article::latest()->get();
+        $articles = Article::latest()->get();
 
         return view('articles.index')->with('articles', $articles);
     }
@@ -95,7 +95,7 @@ class ArticlesController extends Controller
     {
 
 
-            return view('articles.edit', compact('article'));
+        return view('articles.edit', compact('article'));
 //        $tags = Tag::pluck('name', 'id');
 //        return view('articles.edit', compact('article', 'tags'));
 

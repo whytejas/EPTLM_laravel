@@ -8,4 +8,4 @@
 
     {{$name}}
 
-    @stop
+@stop

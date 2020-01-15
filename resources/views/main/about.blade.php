@@ -158,25 +158,25 @@
                 <h1> Partners </h1>
                 <p>We currently work with the association P’tit Dej Solidaires, a group of neighbours in the 19th arrondissement, that serve breakfast to those in need in the Stalingrad area.
                     If you are interested in volunteering for P’tit Dej then please contact them directly on their <a href="https://www.facebook.com/ptitsdejsolidaires/" target="_blank">Facebook</a> page.</p>
-                    <br>
-                    <p><strong>
-                    We are continually looking for new partners to offer our services. If you are an association or group interested in working with us then please email us at
-                    <a href="mailto:info@eptlm.com">info@eptlm.com</a> or <a href="{{url('/contact')}}" target="_blank">Contact Us</a>.</strong></p>
+                <br>
+                <p><strong>
+                        We are continually looking for new partners to offer our services. If you are an association or group interested in working with us then please email us at
+                        <a href="mailto:info@eptlm.com">info@eptlm.com</a> or <a href="{{url('/contact')}}" target="_blank">Contact Us</a>.</strong></p>
                 <a class="linkTop" href="#top">Top</a>
             </div>
 
-          {{--  <div>
-                <h3> Our Partners</h3>
-                <ul>
-                    <li><a href="#">Partner 1</a></li>
-                    <li><a href="#">Partner 2</a></li>
-                    <li><a href="#">Partner 3</a></li>
-                    <li><a href="#">Partner 4</a></li>
+            {{--  <div>
+                  <h3> Our Partners</h3>
+                  <ul>
+                      <li><a href="#">Partner 1</a></li>
+                      <li><a href="#">Partner 2</a></li>
+                      <li><a href="#">Partner 3</a></li>
+                      <li><a href="#">Partner 4</a></li>
 
 
-                </ul>
-                <a class="linkTop" href="#top">Top</a>
-            </div>--}}
+                  </ul>
+                  <a class="linkTop" href="#top">Top</a>
+              </div>--}}
 
 
         </div>

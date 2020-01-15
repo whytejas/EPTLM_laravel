@@ -19,9 +19,9 @@ class AuthVolunteers
         if (Auth::guard('volunteer')->check()) {
             return $next($request);
         }
-       else {
-           return redirect(url('/volunteer/login'));
-       }
+        else {
+            return redirect(url('/volunteer/login'));
+        }
 
     }
 }

@@ -46,18 +46,18 @@
 
 
 
-                {!! Form::open(array('url' => "/formInput", 'id'=>"form")) !!}
+            {!! Form::open(array('url' => "/formInput", 'id'=>"form")) !!}
 
-                <span id="address">
+            <span id="address">
 
                             <strong>All fields are required.</strong>
                         </span>
-                @include('main.form')
+            @include('main.form')
 
-                {!! Form::close() !!}
-                @include('errors.list')
+            {!! Form::close() !!}
+            @include('errors.list')
 
-            </div>
+        </div>
 
 
 

@@ -24,7 +24,7 @@
 <div class="g-recaptcha" data-sitekey="6LfCFMYUAAAAAP05UD0KT7AoZuIRUhhu6xzovDf2"></div>
 
 <div class="form-group">
-{!! Form::text('website', null, ['class' => 'website', 'style' =>'display:none']) !!}
+    {!! Form::text('website', null, ['class' => 'website', 'style' =>'display:none']) !!}
 </div>
 
 <div class="form-group">

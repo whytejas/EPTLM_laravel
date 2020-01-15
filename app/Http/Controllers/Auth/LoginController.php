@@ -74,11 +74,11 @@ class LoginController extends Controller
     }
 
 
-   public function userLogout(Request $request) {
+    public function userLogout(Request $request) {
 
 
         $request->session()->flush();
-       Auth::logout();
+        Auth::logout();
         return redirect('/');
     }
 

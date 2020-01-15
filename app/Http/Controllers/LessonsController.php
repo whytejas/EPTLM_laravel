@@ -67,7 +67,7 @@ class LessonsController extends Controller
         }
 
 
-       return $this->index();
+        return $this->index();
     }
 
 
@@ -132,7 +132,7 @@ class LessonsController extends Controller
 
         $lesson = Lesson::where('id', $id)->delete();
 
-      return $this->list();
+        return $this->list();
 
 
     }

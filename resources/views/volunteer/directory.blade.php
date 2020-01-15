@@ -24,7 +24,7 @@
 
 
     <div>
-<h2>List of Volunteers</h2>
+        <h2>List of Volunteers</h2>
         <ul>
             @foreach ($volunteers->sortBy('lastname') as $volunteer)
                 <li> {{ucfirst($volunteer->firstname)}} {{strtoupper($volunteer->lastname) }}</li>
@@ -39,16 +39,16 @@
     <br><br>
     <div class="articles">
         {!! Form::open(['method' => 'get', 'url' => url('volunteer/directory/getvolunteer/')]) !!}
-    <div class="form-group">
-        {!! Form::label('volunteername', 'Select a Volunteer') !!}
-        {!! Form::select('volunteer_list[]', $volunteers->pluck('firstname'), null, ['class' => 'form-control','id'=>'volunteername' ]) !!}
-    </div>
+        <div class="form-group">
+            {!! Form::label('volunteername', 'Select a Volunteer') !!}
+            {!! Form::select('volunteer_list[]', $volunteers->pluck('firstname'), null, ['class' => 'form-control','id'=>'volunteername' ]) !!}
+        </div>
         <div class="form-group">
             {!! Form::submit('Select', ['class' => 'btn btn-primary form-control', 'id'=>'ajaxSubmit']) !!}
         </div>
 
-    {!! Form::close() !!}
-    @include('errors.list')
+        {!! Form::close() !!}
+        @include('errors.list')
     </div>
     <br><br>
 
@@ -72,7 +72,7 @@
                     url: '/volunteer/directory/getvolunteer/',
                     type: 'GET',
                     data: {name: jQuery("#volunteername option:selected").html()},
-                   dataType: "json",
+                    dataType: "json",
                     success: function(response){
                         console.log(response);
                         var $firstname = response.volunteer.firstname.toUpperCase() ;

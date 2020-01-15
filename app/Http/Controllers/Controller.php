@@ -64,9 +64,9 @@ class Controller extends BaseController
         }
 
 
-else {
-    return view('main.contact');
-}
+        else {
+            return view('main.contact');
+        }
 
 
 

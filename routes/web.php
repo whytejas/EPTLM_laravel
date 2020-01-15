@@ -107,7 +107,7 @@ Route::post('/volunteer/register', 'Auth\RegisterController@createVolunteer')->n
 
 Route::group(['middleware' => 'auth.volunteer'], function () {
     Route::get('/volunteer/dashboard', function(){
-    return view('volunteer.dashboard');
+        return view('volunteer.dashboard');
     });
     Route::get('/volunteer/classroom_signup', 'LessonsController@index')->name('lessonsIndex');
     Route::get('volunteer/lessons/signup/{id}', 'LessonsController@signUp');

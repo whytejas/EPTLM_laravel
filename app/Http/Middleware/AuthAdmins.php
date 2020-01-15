@@ -19,9 +19,9 @@ class AuthAdmins
         if (Auth::guard('admin')->check()) {
             return $next($request);
         }
-       else {
-           return redirect(url('/login'));
-       }
+        else {
+            return redirect(url('/login'));
+        }
 
     }
 }

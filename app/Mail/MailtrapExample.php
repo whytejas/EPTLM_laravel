@@ -23,7 +23,7 @@ class MailtrapExample extends Mailable
      */
     public function __construct($name)
     {
-         $this->username = $name;
+        $this->username = $name;
 
     }
 

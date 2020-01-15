@@ -8,22 +8,22 @@
         <div id="top"></div>
 
         <br><br>
-    <h1>Welcome back, {{Auth::guard('volunteer')->user()->firstname}} ! </h1>
+        <h1>Welcome back, {{Auth::guard('volunteer')->user()->firstname}} ! </h1>
 
     </div>
 
     <div class="content">
 
-<div class="dashboard-btn">
-    <a href="{{url('/volunteer/logout')}}" class="btn btn-dark btn-lg btn-lg active" role="button" aria-pressed="true">Logout</a>
+        <div class="dashboard-btn">
+            <a href="{{url('/volunteer/logout')}}" class="btn btn-dark btn-lg btn-lg active" role="button" aria-pressed="true">Logout</a>
 
-        <a href="{{url('/volunteer/classroom_show')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">Manage Your Current Classroom Sessions</a>
+            <a href="{{url('/volunteer/classroom_show')}}" class="btn btn-primary btn-lg btn-lg active" role="button" aria-pressed="true">Manage Your Current Classroom Sessions</a>
 
-        <a href="{{url('/volunteer/classroom_signup')}}" class="btn btn-success btn-lg btn-lg active" role="button" aria-pressed="true">Sign Up: Classroom Sessions</a>
+            <a href="{{url('/volunteer/classroom_signup')}}" class="btn btn-success btn-lg btn-lg active" role="button" aria-pressed="true">Sign Up: Classroom Sessions</a>
 
 
 
-</div>
+        </div>
     </div>
 
 

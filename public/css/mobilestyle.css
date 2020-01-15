@@ -118,9 +118,9 @@ div.team div.col {
 .team img {
 
     width: 5em;
-   display: inline-block;
-   margin-top:1%;
-   padding-top: 2%;
+    display: inline-block;
+    margin-top:1%;
+    padding-top: 2%;
 
 
 }
@@ -139,14 +139,14 @@ div.polaroid {
 }
 
 .team div.container {
-display: inline-block;
-width: auto;
-padding: 5%;
-margin: 0;
-text-align: center;
-height: auto;
-border: solid white 1px;
-border-radius: 2em;
+    display: inline-block;
+    width: auto;
+    padding: 5%;
+    margin: 0;
+    text-align: center;
+    height: auto;
+    border: solid white 1px;
+    border-radius: 2em;
 
 }
 
@@ -156,7 +156,7 @@ div.table-responsive {
 
 
 div.table-responsive td {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .dashboard-btn  {

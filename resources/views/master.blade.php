@@ -56,11 +56,11 @@
 <body>
 
 <header>
-@include('partials.nav')
+    @include('partials.nav')
 
 </header>
 
-    @yield('content')
+@yield('content')
 
 
 
