@@ -31,7 +31,9 @@
                 <div class="card-header">{{$article->created_at->diffForHumans()}}</div>
                 <div class="card-body text-primary">
                     <h2 class="card-title"><a href="{{ action('ArticlesController@show', [$article->id])}}">{{$article->Title}}</a></h2>
+                    @if (isset($article->filename))
                     <img class="card-img-top" src="{{asset('/uploads/blog/images/'.$article->filename) }}" alt="{{$article->filename}}">
+                    @endif
                     <p class="card-text">Click title to read</p>
                 </div>
             </div>

@@ -2,12 +2,12 @@
 
 <div class="form-group">
     {!! Form::label('Name', 'Name:') !!}
-    {!! Form::text('Name', null, ['class' => 'form-control']) !!}
+    {{ Form::text('Name', null, ['class' => 'form-control']) }}
 </div>
 
 <div class="form-group">
     {!! Form::label('Email', 'Email:') !!}
-    {!! Form::email('Email', null, ['class' => 'form-control']) !!}
+    {{ Form::email('Email', null, ['class' => 'form-control']) }}
 </div>
 
 

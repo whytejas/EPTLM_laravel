@@ -25,9 +25,11 @@
         <div class="card">
 
             <div class="card-body">
-                {{--               <h1>{{ $article->Title}}</h1>--}}
+
+                @if (isset($article->filename))
                 <img class="card-img-top" src="{{asset('/uploads/blog/images/'.$article->filename) }}" alt="{{$article->filename}}">
-                {{--               <h4 class="card-title">Book No: {{ $book->id}}</h4>--}}
+                @endif
+
                 <p class="card-text">
                     Written by <strong>{{ucfirst($article->user->username)}}</strong>
                 </p>

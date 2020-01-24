@@ -64,8 +64,8 @@ class ArticlesController extends Controller
      */
     public function create()
     {
-        $tags = Tag::pluck('name', 'id');
-        return view('articles.create', compact('tags'));
+//        $tags = Tag::pluck('name', 'id');
+        return view('articles.create');
     }
 
     /**
@@ -75,9 +75,9 @@ class ArticlesController extends Controller
      */
     public function store(ArticleRequest $request)
     {
-
-        $this->imageStorage($request);
-
+        if ($request->hasFile('Image')) {
+            $this->imageStorage($request);
+        }
 
         $article = Auth::user()->articles()->create($request->all());
         $article->filename = $request->filename;

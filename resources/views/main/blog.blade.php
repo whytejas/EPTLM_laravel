@@ -20,9 +20,9 @@
                         <div class="blog-post">
                             <h2 class="blog-post-title"><a href="{{ action('ArticlesController@show', [$article->id])}}">{{$article->Title}}</a></h2>
                             <p class="blog-post-meta">by {{ucfirst($article->user()->value('username'))}} :: {{$article->created_at->diffForHumans()}}  </p>
-
+                            @if (isset($article->filename))
                             <img class="card-img-top" src="{{asset('/uploads/blog/images/'.$article->filename) }}" alt="{{$article->filename}}">
-
+                            @endif
                             {!!$article->Content!!}
 
 
